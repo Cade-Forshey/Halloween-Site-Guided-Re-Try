@@ -8,7 +8,11 @@ font-family: "Barrio", system-ui;
 
 
 /*==========Color Pallet==========
-    formn one soon
+    1F4D45 - dark green
+    667451 - olive green
+    7D2E23 - brick red
+    C45B00 - orange
+    BE8D40 - golden
 ==========End of Color Pallet==========*/
 
 
@@ -34,12 +38,11 @@ body {
    font-family: "Nosifer", sans-serif;
    margin: 0;
    font-size: 1.45em;
-   color: #BF3100;
 }
 
 
 .logo a {
-   color: #BF3100;
+   color: #880a06;
 }
 
 
@@ -93,12 +96,12 @@ a {
    background-repeat: no-repeat;
    background-size: cover;
    background-position-y: bottom;
-   min-height: 800px;
+   min-height: 300px;
 }
 
 
 .hero {
-   display: #880a06;
+   display: flex;
    align-items: center;
    justify-content: center;
 }
@@ -137,13 +140,13 @@ img {
 
 .one {
    min-height: 250px;
-   background-image: linear-gradient(#70ac02, #04410c);
+   background-image: linear-gradient(#1F4D45, #667451);
 }
 
 
 .two {
    min-height: 250px;
-   background-image: linear-gradient(red, black);
+   background-color:#C45B00;
 }
 
 
@@ -159,7 +162,7 @@ img {
 
 .four {
    min-height: 250px;
-   background-image: linear-gradient(blue, darkblue);
+   background-image: linear-gradient(#667451, #C45B00);
 }
 
 
