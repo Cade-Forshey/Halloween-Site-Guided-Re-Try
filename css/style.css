@@ -1,0 +1,334 @@
+/*==========Fonts==========
+font-family: "Nosifer", sans-serif;
+font-family: "Butcherman", system-ui;
+font-family: "Rubik Wet Paint", system-ui;
+font-family: "Amatic SC", sans-serif;
+font-family: "Barrio", system-ui;
+==========End Fonts==========*/
+
+
+/*==========Color Pallet==========
+    formn one soon
+==========End of Color Pallet==========*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Barrio&family=Butcherman&family=Nosifer&family=Rubik+Wet+Paint&display=swap');
+
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+
+body {
+   font-family: "Rubik Wet Paint", system-ui;
+   background-image: linear-gradient(#91AEBC, #2B4250);
+   height: 100vh;
+}
+
+
+.logo {
+   font-family: "Nosifer", sans-serif;
+   margin: 0;
+   font-size: 1.45em;
+   color: #BF3100;
+}
+
+
+.logo a {
+   color: #BF3100;
+}
+
+
+ul {
+   list-style: none;
+}
+
+
+a {
+   color: #fff;
+   text-decoration: none;
+}
+.main-nav{
+   margin-top: 5px;
+}
+
+
+.logo a,
+.main-nav a {
+   padding: 10px 15px;
+   text-transform: uppercase;
+   text-align: center;
+   display: block;
+}
+
+
+.main-nav a {
+   color: #96e194;
+   font-size: 1.3em;
+   font-family: "Barrio", system-ui;
+}
+
+
+.main-nav a:hover {
+   color: #ff923a;
+}
+
+
+.header {
+   padding-top: .5em;
+   padding-bottom: .5em;
+   border: 1px solid ;
+   background-image: linear-gradient(#177417, #9a26a5);
+   box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+   border-radius: 5px;
+}
+
+
+#hero {
+   background-image: url(../images/2151827517.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-y: bottom;
+   min-height: 800px;
+}
+
+
+.hero {
+   display: #880a06;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.hero h2 {
+   color: #880a06;
+   font-size: 1.8rem;
+   text-shadow: 2px 2px 6px #000000;
+   font-family: "Nosifer", sans-serif;
+   text-align: center;
+}
+
+
+#hero {
+   min-height: 800px;
+}
+
+
+  
+
+
+/*==========Responsive images==========*/
+img {
+   width: 100%;
+}
+
+
+/*=================================
+           CSS GRID RULES
+=================================*/
+.container {
+   display: grid;
+}
+
+
+.one {
+   min-height: 250px;
+   background-image: linear-gradient(#70ac02, #04410c);
+}
+
+
+.two {
+   min-height: 250px;
+   background-image: linear-gradient(red, black);
+}
+
+
+.three {
+   min-height: 450px;
+   background-image: url(../images/2151827499.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-x: center;
+   background-position-y: bottom;
+}
+
+
+.four {
+   min-height: 250px;
+   background-image: linear-gradient(blue, darkblue);
+}
+
+
+.five {
+   min-height: 250px;
+   background-image: linear-gradient(#cb3189, pink);
+}
+
+
+.six {
+   min-height: 450px;
+   background-image: url(../images/2151827618.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-x: center;
+   background-position-y: bottom;
+}
+
+
+.seven {
+   min-height: 250px;
+   background-image: linear-gradient(#192227, #502121);
+}
+
+/*=================================
+          END CSS GRID RULES
+=================================*/
+
+/*==========Tablet Media Query==========*/
+@media screen and (min-width: 769px) {
+
+
+   .header,
+   .main-nav {
+       display: flex;
+   }
+
+
+   .header {
+       flex-direction: column;
+       align-items: center;
+       .header {
+           width: 80%;
+           margin: 0 auto;
+           max-width: 1150px;
+       }
+   }
+   #hero {
+       min-height: 500px;
+   }
+  
+   .hero h2 {
+       font-size: 2.1rem;
+   }
+  
+   .container {
+       grid-template-columns: 1fr 1fr;
+       grid-auto-rows: minmax(100px, auto);
+   }
+  
+   .one {
+       grid-column: 1 / 3;
+   }
+  
+   .two {
+       grid-column: 1/2;
+   }
+  
+   .three {
+       grid-column: 2/3;
+   }
+  
+   .four {
+       grid-column: 1/3;
+   }
+  
+   .five {
+       grid-column: 1/3;
+   }
+  
+   .six {
+       grid-column: 1/2;
+   }
+  
+   .seven {
+       grid-column: 2/3;
+   }
+  
+  
+
+
+}
+
+
+/*==========End Tablet Meida Query==========*/
+
+
+
+
+
+
+/*==========Desktop Media Query==========*/
+@media screen and (min-width: 1025px) {
+
+
+   .header {
+       flex-direction: row;
+       justify-content: space-between;
+   }
+
+
+   .container {
+       grid-template-columns: 1fr 1fr 1fr;
+   }
+
+
+   .one {
+       grid-column: 1 / 4;
+   }
+
+
+   .two {
+       grid-column: 1 / 3;
+   }
+
+
+   .three {
+       grid-column: 3 / 4;
+   }
+
+
+   .four {
+       grid-column: 1 / 4;
+   }
+
+
+   .five {
+       grid-column: 1 / 4;
+   }
+
+
+   .six {
+       grid-column: 1 / 2;
+   }
+
+
+   .seven {
+       grid-column: 2 / 4;
+   }
+}
+/*==========End Desktop Media Query==========*/
+
+
+/*==========Large Display Query==========*/
+@media screen and (min-width: 1850px) {
+
+
+   .header {
+       flex-direction: row;
+       justify-content: space-between;
+   }
+}
+/*==========End Large Display Media Query==========*/
+
+
+footer {
+   margin-top: o;
+   padding: 10%;
+   background-color: #ff9505;
+   color: #192227;
+   min-height: 200px;
+}
